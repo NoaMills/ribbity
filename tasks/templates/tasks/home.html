@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Happy {{day}}!</p>
+
+<div id="newTaskForm" class="panel">
+    <h1>Task form</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+<div id="toDoMaker" class="panel">
+    <h1>To do list generator</h1>
+    <p>abc</p>
+</div>
+<div id="allTasks" class="panel">
+    <h1>All tasks</h1>
+    <ul>
+        {% include 'task_list.html' %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #5a9dbf, #345180);
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.panel {
+    float: left;
+    width: 32%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0.5%;
+}
+
+#newTaskForm {
+
+}
+
+#toDoMaker {
+
+}
+
+#allTasks {
+
+}
+
+
+
+

@@ -1,9 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
 <body>
-    <a href="/home">Home</a>
-    <a href="/tasks">Tasks</a>
+<!--    <a href="/home">Home</a>-->
+<!--    <a href="/tasks">Tasks</a>-->
     {% block content %}
         <p>Default base content</p>
     {% endblock %}
